@@ -11,7 +11,7 @@ export default function AddPet() {
   });
   const [added, setAdded] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     setAdded(true);
   };
@@ -32,6 +32,7 @@ export default function AddPet() {
             type="text"
             placeholder={field[0].toUpperCase() + field.slice(1)}
             className="w-full p-3 border rounded-lg"
+            // @ts-ignore
             value={form[field]}
             onChange={(e) => setForm({ ...form, [field]: e.target.value })}
             required

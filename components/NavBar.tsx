@@ -122,6 +122,7 @@ export default function Navbar() {
             <div
               key={i}
               className="relative group"
+              // @ts-ignore
               onMouseEnter={() => setOpenMenu(i)}
               onMouseLeave={() => setOpenMenu(null)}
             >
