@@ -12,7 +12,7 @@ import { useCart } from "@/app/context/CartContext";
 
 export default function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false);
-  const { cart } = useCart();
+  const { cart } = useCart() as { cart: any[] };
 
   const menus = [
     {
