@@ -60,7 +60,7 @@ export default function HomePage() {
     <div className="bg-gray-50">
       {/* Hero Section */}
       <section className="relative bg-amber-500 py-20 px-6 lg:px-20 text-center">
-        <div className="max-w-4xl mx-auto">
+        <div className="w-full">
           <h1 className="text-5xl font-bold text-emerald-800 mb-6 leading-tight">
             Find Your Perfect Pet in Nigeria 🐾
           </h1>
@@ -86,12 +86,14 @@ export default function HomePage() {
           </div>
         </div>
 
-        <div className="relative w-full h-[450px] mt-16 rounded-3xl overflow-hidden shadow-lg">
+        <div className="relative w-full h-[250px] sm:h-[350px] md:h-[450px] mt-16 rounded-3xl overflow-hidden shadow-lg">
           <Image
             src="/images/allDogs.jpg"
             alt="Happy pets in Nigeria"
             fill
-            className="object-cover"
+            className="object-cover object-center"
+            sizes="100vw"
+            priority
           />
         </div>
       </section>

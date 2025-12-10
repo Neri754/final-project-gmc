@@ -116,14 +116,14 @@ export default function Footer() {
             <li className="flex items-start gap-2">
               <MapPin className="w-5 h-5 mt-1" />
               <span>
-                Lagos, Nigeria <br />
+                Abuja, Nigeria <br />
                 Nationwide Pet Support
               </span>
             </li>
 
             <li className="flex items-center gap-2">
               <Phone className="w-5 h-5" />
-              <span>+234 812 345 6789</span>
+              <span>+234 913 098 1023</span>
             </li>
 
             <li className="flex items-center gap-2">

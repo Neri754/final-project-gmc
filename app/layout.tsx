@@ -1,11 +1,10 @@
-import "./globals.css";
-import Navbar from "@/components/NavBar";
-import { CartProvider } from "@/app/context/CartContext";
-import Footer from "@/components/Footer";
+// app/layout.tsx
+import "./globals.css"; // keep tailwind + base css import here (server component)
+import ClientNavWrapper from "@/components/ClientNavWrapper";
+import ClientFooterWrapper from "@/components/ClientFooterWrapper";
 
 export const metadata = {
-  title: "Naija Pet Finder",
-  description: "Find and adopt pets across Nigeria 🐾",
+  title: "NaijaPetPlace",
 };
 
 export default function RootLayout({
@@ -15,12 +14,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="bg-gray-50">
-        <CartProvider>
-          <Navbar />
-          <main className="pt-8 px-6">{children}</main>
-          <Footer />
-        </CartProvider>
+      <body className="">
+        {/* ClientNavWrapper is a client component that chooses which navbar to render
+            and also provides Auth + Cart contexts to the tree. */}
+        <ClientNavWrapper>{children}</ClientNavWrapper>
+        <ClientFooterWrapper />
       </body>
     </html>
   );
