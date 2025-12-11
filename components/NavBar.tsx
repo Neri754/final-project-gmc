@@ -53,7 +53,7 @@ export default function Navbar() {
   return (
     <>
       {/* NAVBAR */}
-      <nav className="bg-white shadow-md sticky top-0 z-50">
+      <nav className="bg-amber-100 shadow-md sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="text-2xl font-bold text-emerald-700">
@@ -86,11 +86,13 @@ export default function Navbar() {
               </div>
             ))}
 
-            {/* Cart */}
             <Link href="/cart" className="relative">
               <ShoppingCart className="w-6 h-6 text-emerald-700" />
+
+              {/* @ts-ignore */}
               {cart.length > 0 && (
                 <span className="absolute -top-1 -right-2 bg-orange-600 text-white text-xs px-2 rounded-full">
+                  {/* @ts-ignore */}
                   {cart.length}
                 </span>
               )}

@@ -1,78 +1,3 @@
-// "use client";
-
-// import Link from "next/link";
-
-// export default function PetHealthPage() {
-//   const articles = [
-//     {
-//       id: 1,
-//       category: "Pet Health",
-//       title: "Improve Your Senior Cat’s Mobility",
-//       author: "Richard Rowlands",
-//       date: "October 26, 2024",
-//       img: "https://images.unsplash.com/photo-1710322928695-c7fb49886cb1?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjF8fGNhdCUyMGhlYWx0aHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800",
-//       desc: "Aging cats may slow down, but gentle exercises and diet changes can help them stay active and comfortable for years.",
-//     },
-//     {
-//       id: 2,
-//       category: "Dog Care",
-//       title: "10 Ways to Keep Your Dog Young Forever!",
-//       author: "Dr. Debra Primovic - DVM",
-//       date: "December 30, 2014",
-//       img: "https://images.unsplash.com/photo-1611173622933-91942d394b04?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZG9nJTIwY2FyZXxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800",
-//       desc: "Discover proven strategies for maintaining your dog’s vitality, from daily walks to proper nutrition and mental stimulation.",
-//     },
-//     {
-//       id: 3,
-//       category: "Diseases & Conditions",
-//       title: "11 Reasons Dogs Need to See a Veterinary Surgeon",
-//       author: "Dr. Patricia Khuly",
-//       date: "August 19, 2015",
-//       img: "https://images.unsplash.com/photo-1700665537650-1bf37979aae0?ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTQ3fHx2ZXRlcmluYXJ5JTIwc3VyZ2VvbnxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&q=60&w=800",
-//       desc: "Knowing when to visit a board-certified vet surgeon can save your pet’s life — here’s what every pet parent should know.",
-//     },
-//   ];
-
-//   return (
-//     <section className="max-w-7xl mx-auto px-6 py-10">
-//       <h1 className="text-4xl font-bold text-emerald-700 mb-6">
-//         Pet Health & Wellness 🩺
-//       </h1>
-//       <p className="text-gray-600 mb-10 text-lg">
-//         Expert advice, health tips, and preventive care guides for dogs, cats,
-//         and all pets. Click an article to read the full guide.
-//       </p>
-
-//       <div className="grid md:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-8">
-//         {articles.map((article) => (
-//           <Link key={article.id} href={`/care/health/${article.id}`}>
-//             <div className="bg-white rounded-xl shadow-lg hover:shadow-2xl transition duration-300 overflow-hidden border border-gray-100 cursor-pointer">
-//               <img
-//                 src={article.img}
-//                 alt={article.title}
-//                 className="w-full h-52 object-cover"
-//               />
-//               <div className="p-5">
-//                 <span className="inline-block bg-emerald-100 text-emerald-700 text-xs font-semibold px-3 py-1 rounded-full mb-3">
-//                   {article.category}
-//                 </span>
-//                 <h2 className="text-xl font-semibold text-gray-800 mb-2 hover:text-emerald-600">
-//                   {article.title}
-//                 </h2>
-//                 <p className="text-gray-600 text-sm mb-4">{article.desc}</p>
-//                 <div className="flex items-center justify-between text-sm text-gray-500 border-t pt-3">
-//                   <p>✍️ {article.author}</p>
-//                   <p>{article.date}</p>
-//                 </div>
-//               </div>
-//             </div>
-//           </Link>
-//         ))}
-//       </div>
-//     </section>
-//   );
-// }
-
 "use client";
 import Image from "next/image";
 import Link from "next/link";
@@ -85,7 +10,7 @@ export default function HealthWellness() {
     {
       id: 1,
       title: "How to Help Your Cat Stay Active Indoors",
-      img: "https://images.unsplash.com/photo-1592194996308-7b43878e84a6",
+      img: "https://images.unsplash.com/photo-1518791841217-8f162f1e1131?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8Y2F0c3xlbnwwfHwwfHx8MA%3D%3D",
       content: `Indoor cats need stimulation to prevent boredom and obesity. Try rotating toys, adding cat trees, or creating 
       window perches so your cat can watch the outdoors safely. Daily play sessions of at least 15 minutes will help 
       maintain both physical and mental fitness.`,

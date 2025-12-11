@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function PublicNavbar() {
   return (
-    <nav className="w-full bg-white shadow-md py-4 px-6 flex justify-between items-center">
+    <nav className="w-full bg-amber-100 sticky top-0 z-50 shadow-md py-4 px-6 flex justify-between items-center">
       <Link href="/landing" className="text-2xl font-bold text-emerald-700">
         🐾 NaijaPetPlace
       </Link>
