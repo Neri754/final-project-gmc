@@ -26,10 +26,8 @@ export function AuthProvider({ children }) {
 
   function logout() {
     setUser(null);
-    localStorage.removeItem("np_user");
     localStorage.removeItem("np_token");
-
-    document.cookie = "np_token=; path=/; max-age=0";
+    localStorage.removeItem("np_user");
   }
 
   return (
