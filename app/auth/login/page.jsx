@@ -34,7 +34,7 @@ export default function LoginPage() {
 
     // Save login
     localStorage.setItem("user", JSON.stringify(data.user));
-    localStorage.setItem("token", data.token);
+    document.cookie = `np_token=${data.token}; path=/`;
 
     router.push("/");
   }
